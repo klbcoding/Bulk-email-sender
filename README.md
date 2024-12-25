@@ -93,7 +93,7 @@ Subject: {subject}\n
 """
 ```
 
-The function rejection_email_template() will be covered later.
+The function rejection_email_template() returns a string which is the body of the email. The body will always be under the subject.
 
 After setting up your `message`, you have to send a request to the SMTP server. Here is how you do it:
 ```
