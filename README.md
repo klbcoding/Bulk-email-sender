@@ -58,7 +58,7 @@ Create an excel sheet, and fill it up according to the template shown. It is imp
 
 ![Columns A, B, C have headers name, email, position respectively](rejected_applicants.png)
 
-Now, load the workbook by specifying the file name and sheet name.
+Now, load the workbook by specifying the file name within `openpyxl.load_workbook()`. Afterwards, create a worksheet object `ws` using the sheet name as follows:
 
 ```
 # Loading Excel data
@@ -111,5 +111,3 @@ def rejection_email_template(name, position):
     return body
 ```
 
-Copyright © 2024 klbcoding  
-All rights reserved. No part of this software may be copied, redistributed or modified without written permission from the copyright owner.
